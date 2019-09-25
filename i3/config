@@ -32,13 +32,16 @@ bindsym $spr+v exec terminal -e 'alsamixer'
 # screenshot macros
 bindsym Print --release exec --no-startup-id i3-scrot -s
 bindsym Shift+Print --release exec --no-startup-id i3-scrot -w
-bindsym Ctrl+Print --release exec --no-startup-id i3-scrot -d 
+bindsym Ctrl+Print --release exec --no-startup-id i3-scrot -d
 
 # focusing windows
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
+
+# toggle floating mode
+bindsym $spr+Shift+Return floating toggle
 
 # moving windows
 bindsym $mod+Shift+$left move left
