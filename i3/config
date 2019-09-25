@@ -37,7 +37,7 @@ bindsym Ctrl+Print --release exec --no-startup-id i3-scrot -d
 # focusing windows
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
-bindsym $mod+$yo focus up
+bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # moving windows
