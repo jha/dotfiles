@@ -6,7 +6,7 @@ set $right semicolon
 set $up k
 set $down l
 
-set $resize_amt 5
+set $resize_amt 20
 
 set $ws1 1
 set $ws2 2
@@ -119,10 +119,10 @@ mode "$mode_system" {
 set $mode_resize press esc to exit resize mode
 bindsym $mod+r mode "$mode_resize"
 mode "$mode_resize" {
-        bindsym $left resize shrink width $resize_amt px or $resize_amt ppt
-        bindsym $up resize grow height $resize_amt px or $resize_amt ppt
-        bindsym $down resize shrink height $resize_amt px or $resize_amt ppt
-        bindsym $right resize grow width $resize_amt px or $resize_amt ppt
+        bindsym $left resize shrink width $resize_amt px
+        bindsym $up resize grow height $resize_amt px
+        bindsym $down resize shrink height $resize_amt px
+        bindsym $right resize grow width $resize_amt px
 
         # exit resize mode: Enter or Escape
         bindsym Escape mode "default"
